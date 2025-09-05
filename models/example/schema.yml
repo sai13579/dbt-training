@@ -21,3 +21,14 @@ models:
     
     - name: catalog
       description: "Call center catalog table"
+
+    - name: customers
+      description: "Customers Table"
+      columns:
+          - name: c_customer_id
+            description: "The Primary key for Customers table"
+            tests:
+              - unique
+              - not_null
+
+        
